@@ -62,22 +62,6 @@ const BookingScreen = ({ route }) => {
       setData(data.chosen_hotel.data);
     };
     fetchHotels();
-    // const fetchRoutes = async () => {
-    //   const response = await route;
-    //   console.log("route", response);
-    //   setNewDataGuest([
-    //     { gender: "Tn", name: "Andreas Andreas" },
-    //     {
-    //       gender: "",
-    //       name: "",
-    //     },
-    //   ]);
-    //   if (!route.params === undefined) {
-    //     setNewDataGuest([{ gender: "Tn", name: "Andreas Andreas" }]);
-    //     console.log("route", response.data);
-    //   }
-    // };
-    // fetchRoutes();
     if (route.params?.data) {
       setNewDataGuest([
         ...route.params.data.filter(
@@ -86,7 +70,7 @@ const BookingScreen = ({ route }) => {
       ]);
     }
   }, [route.params?.data]);
-  //   console.log("data", data?.get_chosen_hotel.chosen_hotel_room.room_name);
+
   return (
     <SafeAreaCustom>
       <ScrollView flex={1} showsVerticalScrollIndicator={false}>

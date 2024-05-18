@@ -1,5 +1,5 @@
-import {createConfig} from '@gluestack-ui/themed';
-import {config as defaultConfig} from '@gluestack-ui/config';
+import { createConfig } from "@gluestack-ui/themed";
+import { config as defaultConfig } from "@gluestack-ui/config";
 
 const config = createConfig({
   ...defaultConfig,
@@ -7,9 +7,9 @@ const config = createConfig({
     ...defaultConfig.tokens,
     fonts: {
       ...defaultConfig.tokens.fonts,
-      body: 'Poppins-Regular',
+      body: "Poppins-Regular",
     },
   },
 });
 
-export {config};
+export { config };
