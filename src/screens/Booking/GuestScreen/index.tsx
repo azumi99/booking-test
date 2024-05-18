@@ -111,7 +111,7 @@ const GuestScreen = ({ route }) => {
           </HStack>
         </VStack>
       </ScrollView>
-      <View paddingHorizontal={16}>
+      <View paddingHorizontal={16} mb={16}>
         <TouchableOpacity
           style={{
             borderRadius: 10,

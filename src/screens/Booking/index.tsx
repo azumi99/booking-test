@@ -122,7 +122,7 @@ const BookingScreen = ({ route }) => {
               borderRadius={10}
               borderWidth={0.5}
               borderColor="$secondary200"
-              paddingRight={50}
+              paddingRight={100}
             >
               <HStack space="md" alignItems="center">
                 <Image
@@ -301,7 +301,7 @@ const BookingScreen = ({ route }) => {
           </VStack>
         </VStack>
       </ScrollView>
-      <View paddingHorizontal={16}>
+      <View paddingHorizontal={16} mb={16}>
         <TouchableOpacity
           style={{
             borderRadius: 10,
